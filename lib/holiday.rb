@@ -61,7 +61,7 @@ end
       puts "#{season.to_s.capitalize}:"
     holidays.each do |day, supplies|
     holiday_string = day.to_s.split("_").each { |word| word.capitalize }.join(" ")
-    " #{holiday_string}: #{supplies.to_s}.join(", ")"
+    puts " #{holiday_string}: #{supplies.to_s}.join(", ")"
     end
   end
 end
