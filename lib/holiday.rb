@@ -107,7 +107,15 @@ holiday_hash.each do |season, data|
      end
   end
 
+ def all_supplies_in_holidays(holiday_hash)
+    end
 
+    # it "should output the formatted list of holidays and their supplies" do
+    #   expect($stdout).to receive(:puts).with(@output)
+    #   all_supplies_in_holidays(holiday_supplies)
+    # end
+
+  end
 
 def all_holidays_with_bbq(holiday_hash)
 arr2 = []
