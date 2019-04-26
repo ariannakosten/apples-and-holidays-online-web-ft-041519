@@ -61,18 +61,6 @@ def all_supplies_in_holidays(holiday_hash)
   end
 
 def all_holidays_with_bbq(holiday_hash)
-arr2 = []
-holiday_hash.each do |season, holiday|
-  holiday.each do |day, supplies|
-    supplies.each do |supply|
-     if supply == "BBQ"
-        arr2.push(holiday)
-      end
-    end
-  end
-end
-arr2
-end
   arr2 = []
   holiday_hash. each do |season, holiday_w_supplies|
     holiday_w_supplies.each do |holiday, supplies|
