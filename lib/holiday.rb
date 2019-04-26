@@ -90,9 +90,6 @@ holiday_hash.each do |season, data|
 
      end
   end
-
-
- end	end
  
  holiday_hash.each do |season, data|
     puts "#{season.to_s.capitalize!}:"
