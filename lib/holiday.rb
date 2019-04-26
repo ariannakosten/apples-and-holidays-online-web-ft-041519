@@ -73,6 +73,16 @@ holiday_hash.each do |season, holiday|
 end
 arr2
 end
+  arr2 = []
+  holiday_hash. each do |season, holiday_w_supplies|
+    holiday_w_supplies.each do |holiday, supplies|
+      if supplies.include?("BBQ")
+        arr2 << holiday
+      end 
+    end 
+  end 
+  arr2
+end
 
 
 
