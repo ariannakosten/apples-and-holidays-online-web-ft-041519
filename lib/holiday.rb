@@ -55,6 +55,7 @@ end
   arr2 =[]
   holiday_hash[:winter].each {|holiday, supplies| arr2 << supplies}
   arr2.flatten
+  holiday_hash[:winter].values.flatten
 end
   
 def all_supplies_in_holidays(holiday_hash)
