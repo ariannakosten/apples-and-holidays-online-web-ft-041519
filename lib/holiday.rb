@@ -92,7 +92,9 @@ holiday_hash.each do |season, data|
   end
 
 
- end	endholiday_hash.each do |season, data|
+ end	end
+ 
+ holiday_hash.each do |season, data|
     puts "#{season.to_s.capitalize!}:"
     data.each do |holiday, supply|
       array = holiday.to_s.split("_")
@@ -109,22 +111,19 @@ holiday_hash.each do |season, data|
   end
 
 
- end	end
-
-
 
 def all_holidays_with_bbq(holiday_hash)
-answer = []
-holiday_hash.each do |season, data|
-  data.each do |holiday, value|
-    value.each do |supply|
+arr2 = []
+holiday_hash.each do |season, holiday|
+  holiday.each do |day, supplies|
+    supplies.each do |supply|
      if supply == "BBQ"
-        answer.push(holiday)
+        arr2.push(holiday)
       end
     end
   end
 end
-answer
+arr2
 end
 
 
