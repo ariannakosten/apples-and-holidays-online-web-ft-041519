@@ -50,66 +50,7 @@ def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_arr
       end
 
 def all_winter_holiday_supplies(holiday_hash)
-  
-  arr2 =[]
-  holiday_hash[:winter].each {|holiday, supplies| arr2 << supplies}
-  arr2.flatten
-  
-  holiday_hash.each do | season, holiday|
-     puts "#{season.capitalize}:"
-     holiday.each do |holiday, item|
-       puts "  #{holiday.to_s.split("_").map 
-       {|i| i.capitalize}.join(" ")}: #{item.join(", ")}"
-     end
-  end 
 end
- holiday_hash.each do |season, holiday|
-    puts season.to_s.capitalize! << ":"
-    holiday.each do |holiday, supplies|
-      supplies = supplies.join(", ")
-      holiday = holiday.to_s.split("_").map {|w| w.capitalize}.join(" ")<< ":"
-      puts "  " + holiday + " " + supplies
-    end
-  end
-end
-
-holiday_hash.each do |season, data|
-    puts "#{season.to_s.capitalize!}:"
-    data.each do |holiday, supply|
-      array = holiday.to_s.split("_")
-      final_holiday = []
-        array.each do |x|
-          final_holiday << x.capitalize!
-        end
-      holiday = final_holiday.join(" ")
-
-       supply = supply.join(", ")
-      puts "  #{holiday}: #{supply}"
-
-     end
-  end
-
-
- end	endholiday_hash.each do |season, data|
-    puts "#{season.to_s.capitalize!}:"
-    data.each do |holiday, supply|
-      array = holiday.to_s.split("_")
-      final_holiday = []
-        array.each do |x|
-          final_holiday << x.capitalize!
-        end
-      holiday = final_holiday.join(" ")
-
-       supply = supply.join(", ")
-      puts "  #{holiday}: #{supply}"
-
-     end
-  end
-
-
- end	end
-
-
 
 
 def all_holidays_with_bbq(holiday_hash)
